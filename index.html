@@ -27,17 +27,38 @@
             100% { transform: rotate(360deg); }
         }
         
+        #content {
+            display: none;
+            text-align: center;
+        }
+        
     </style>
     
 </head>
 
-<body>
+<body onLoad="myFunction()">
+    
     
     <div id="loader"></div>
     
+    <div id="content" style="display: none;">
+        <h1>TESTING ANIMATIONS C:</h1>
+    </div>
+    
     <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        }
     </script>
     
 </body>
 
-</html>
+</html> 
+
