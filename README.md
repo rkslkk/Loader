@@ -1,2 +1,2 @@
 # Loader
-CSS Loader c: super fun
+CSS Loader- Super fun loading animation for websites. 
